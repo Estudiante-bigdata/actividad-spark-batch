@@ -1,29 +1,30 @@
-# Actividad de Spark Batch: análisis de ventas
+Actividad de Spark Batch
 
-## Descripción
+Descripción
 
-Este proyecto utiliza Apache Spark y Python para procesar los datos de ventas de una miscelánea almacenados en un archivo CSV. Calcula el valor de cada venta, el total vendido por categoría, las unidades vendidas por producto y un resumen general.
+En esta actividad se utiliza Apache Spark para analizar los datos de ventas de una miscelánea almacenados en el archivo ventas.csv. El programa permite calcular el valor de las ventas, conocer los productos más vendidos y consultar los resultados por categoría.
 
-## Herramientas
+Herramientas utilizadas
 
-- Python
-- Apache Spark 3.5.8
-- Archivo de datos CSV
+Python.
 
-## Estructura esperada
+Apache Spark 3.5.8.
 
-El archivo de datos debe llamarse `ventas.csv` y estar disponible en:
+Archivo de datos ventas.csv.
 
-`/home/vboxuser/actividad_spark_lotes/datos/ventas.csv`
+Cómo ejecutar el programa
 
-El CSV debe incluir las columnas `fecha`, `venta_id`, `producto`, `categoria`, `cantidad` y `precio_unitario`.
+Tener instalado Apache Spark y Python.
 
-## Cómo ejecutar
+Guardar el archivo ventas.csv en la carpeta de datos indicada en el programa.
 
-En la máquina virtual Ubuntu donde está instalado Spark, ejecutar:
+Abrir una terminal y ejecutar el siguiente comando:
 
-```bash
 spark-submit ~/actividad_spark_lotes/spark_batch.py
+
+Resultados
+
+Al ejecutar el programa se muestran los registros de ventas, el valor de cada venta, los totales por categoría, las unidades vendidas por producto y el resumen general.
 ```
 
 El programa muestra en la terminal los registros, el valor de cada venta, el total por categoría, las unidades vendidas por producto y el resumen general.
